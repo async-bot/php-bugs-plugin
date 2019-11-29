@@ -1,0 +1,43 @@
+{
+    "name": "async-bot/php-bugs-plugin",
+    "description": "PHP bugs plugin",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pieter Hordijk",
+            "email": "info@pieterhordijk.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "amphp/amp": "^2.2.0",
+        "amphp/log": "^1.0",
+        "async-bot/core": "dev-master",
+        "room11/dom-utils": "^1.1"
+    },
+    "require-dev": {
+        "infection/infection": "^0.13.4",
+        "maglnet/composer-require-checker": "^2.0",
+        "phpunit/phpunit": "^8.3",
+        "slevomat/coding-standard": "^5.0.4",
+        "squizlabs/php_codesniffer": "^3.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsyncBot\\Plugin\\PhpBugs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AsyncBot\\Plugin\\PhpBugsTest\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

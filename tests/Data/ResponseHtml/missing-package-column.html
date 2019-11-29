@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel='alternate' type='application/rss+xml' title='Search bugs - RDF' href='rss/search.php?limit=30&order_by=id&direction=DESC&cmd=display&status=Open&bug_type=All'>
+    <link rel='alternate' type='application/rss+xml' title='Search bugs - RSS 2.0' href='rss/search.php?format=rss2&limit=30&order_by=id&direction=DESC&cmd=display&status=Open&bug_type=All'>
+    <base href="https://bugs.php.net/">
+    <title>PHP :: Bugs :: Search</title>
+    <link rel="shortcut icon" href="https://bugs.php.net/images/favicon.ico">
+    <link rel="stylesheet" href="https://bugs.php.net/css/style.css">
+</head>
+
+<body>
+
+<table id="top" class="head" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="head-logo">
+            <a href="/"><img src="images/logo.png" alt="Bugs" vspace="2" hspace="2"></a>
+        </td>
+
+        <td class="head-menu">
+            <a href="https://php.net/">php.net</a>&nbsp;|&nbsp;
+            <a href="https://php.net/support.php">support</a>&nbsp;|&nbsp;
+            <a href="https://php.net/docs.php">documentation</a>&nbsp;|&nbsp;
+            <a href="report.php">report a bug</a>&nbsp;|&nbsp;
+            <a href="search.php">advanced search</a>&nbsp;|&nbsp;
+            <a href="search-howto.php">search howto</a>&nbsp;|&nbsp;
+            <a href="stats.php">statistics</a>&nbsp;|&nbsp;
+            <a href="random">random bug</a>&nbsp;|&nbsp;
+            <a href="login.php">login</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="head-search" colspan="2">
+            <form method="get" action="search.php">
+                <p class="head-search">
+                    <input type="hidden" name="cmd" value="display">
+                    <small>go to bug id or search bugs for</small>
+                    <input class="small" type="text" name="search_for" value="" size="30">
+                    <input type="image" src="images/small_submit_white.gif" alt="search" style="vertical-align: middle;">
+                </p>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<table class="middle" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="content">
+
+            <table border="0" cellspacing="2" width="100%">
+
+                <!-- BEGIN PREV/NEXT -->
+                <tr>
+                    <td class="search-prev_next" colspan="11">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td class="search-prev">&nbsp;</td>
+                                <td class="search-showing">Showing 1-30 of 4889</td>
+                                <td class="search-next"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;begin=30">Show Next 30 Entries &raquo;</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- END PREV/NEXT -->
+
+
+                <tr>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=id">ID#</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=ts1">Date</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=ts2">Last Modified</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=package_name">Package</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=bug_type">Type</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=status">Status</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=php_version">PHP Version</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=php_os">OS</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=sdesc">Summary</a></th>
+                    <th class="results"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;reorder_by=assign">Assigned</a></th>
+                </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78448">78448</a><br><a href="bug.php?id=78448&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-23 08:21 UTC</td>
+                    <td align="center">Not modified</td>
+                    </tr>
+                <tr class="Csd" valign="top">
+                    <td align="center"><a href="bug.php?id=1712">1712</a><br><a href="bug.php?id=1712&amp;edit=1">(edit)</a></td>
+                    <td align="center">1999-07-14 12:17 UTC</td>
+                    <td align="center">2001-02-10 15:20 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=Parser+error">Parser error</a></td>
+                    <td>Bug</td>
+                    <td>Closed</td>
+                    <td>3.0.11</td>  <td>win32(nt4sp4)+linux 2.0.37+aix4.</td>
+                    <td><a href="bug.php?id=1712">asp style tags not recogized by parser</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr class="Fbk" valign="top">
+                    <td align="center"><a href="bug.php?id=62778">62778</a><br><a href="bug.php?id=62778&amp;edit=1">(edit)</a></td>
+                    <td align="center">2012-08-08 11:50 UTC</td>
+                    <td align="center">2019-08-21 13:20 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=Variables+related">Variables related</a></td>
+                    <td>Req</td>
+                    <td>Feedback<br>2 days</td>
+                    <td>5.4.6RC1</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=62778">pre-increment operator produces rvalue rather than lvalue</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr class="NoF" valign="top">
+                    <td align="center"><a href="bug.php?id=4307">4307</a><br><a href="bug.php?id=4307&amp;edit=1">(edit)</a></td>
+                    <td align="center">2000-05-03 11:14 UTC</td>
+                    <td align="center">2006-07-17 08:08 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=OCI8+related">OCI8 related</a></td>
+                    <td>Bug</td>
+                    <td>No Feedback</td>
+                    <td>4.0 Release Candidate 1</td>  <td>Sun Solaris 5.7</td>
+                    <td><a href="bug.php?id=4307">OCILogon often causes ORA-12154 TNS error</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr class="Sus" valign="top">
+                    <td align="center"><a href="bug.php?id=9507">9507</a><br><a href="bug.php?id=9507&amp;edit=1">(edit)</a></td>
+                    <td align="center">2001-03-01 04:30 UTC</td>
+                    <td align="center">2003-08-15 21:32 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=Feature%2FChange+Request">Feature/Change Request</a></td>
+                    <td>Req</td>
+                    <td>Suspended</td>
+                    <td>4.2.0</td>  <td>ANY</td>
+                    <td><a href="bug.php?id=9507">Java objects as session variable</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr class="Nab" valign="top">
+                    <td align="center"><a href="bug.php?id=62393">62393</a><br><a href="bug.php?id=62393&amp;edit=1">(edit)</a></td>
+                    <td align="center">2012-06-22 10:04 UTC</td>
+                    <td align="center">2012-06-23 06:39 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=Reflection+related">Reflection related</a></td>
+                    <td>Bug</td>
+                    <td>Not a bug</td>
+                    <td>5.4.4</td>  <td>Windows 7 Prof.</td>
+                    <td><a href="bug.php?id=62393">__callStatic from a derived class object context calls __call instead</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr class="Dup" valign="top">
+                    <td align="center"><a href="bug.php?id=1027">1027</a><br><a href="bug.php?id=1027&amp;edit=1">(edit)</a></td>
+                    <td align="center">1999-01-05 04:09 UTC</td>
+                    <td align="center">2002-01-09 10:02 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=Feature%2FChange+Request">Feature/Change Request</a></td>
+                    <td>Req</td>
+                    <td>Duplicate</td>
+                    <td>4.0</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=1027">fprintf() please</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr class="Wfx" valign="top">
+                    <td align="center"><a href="bug.php?id=2970">2970</a><br><a href="bug.php?id=2970&amp;edit=1">(edit)</a></td>
+                    <td align="center">1999-12-13 15:53 UTC</td>
+                    <td align="center">2005-03-30 09:01 UTC</td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;package_name[]=Reproducible+Crash">Reproducible Crash</a></td>
+                    <td>Bug</td>
+                    <td>Wont fix</td>
+                    <td>3.0.12</td>  <td>SUSE Linux 6.1</td>
+                    <td><a href="bug.php?id=2970">segfault relaed to xml_set_unparsed_entitiy_decl_handler</a></td>
+                    <td><a href="search.php?cmd=display&amp;direction=DESC&amp;limit=30&amp;assign=hholzgra">hholzgra</a></td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78434">78434</a><br><a href="bug.php?id=78434&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-21 10:02 UTC</td>
+                    <td align="center">2019-08-21 13:03 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=%2AGeneral+Issues'>*General Issues</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.4.0beta2</td>  <td>irrelevant</td>
+                    <td><a href="bug.php?id=78434">Generator yields no items after valid() call</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78431">78431</a><br><a href="bug.php?id=78431&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-20 20:18 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=taint'>taint</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.1Git-2019-08-20 (Git)</td>  <td>Windows 10</td>
+                    <td><a href="bug.php?id=78431">Error When building Taint Extension on Windows</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Ana">
+                    <td align="center"><a href="bug.php?id=78429">78429</a><br><a href="bug.php?id=78429&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-20 09:59 UTC</td>
+                    <td align="center">2019-08-20 12:57 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=opcache'>opcache</a></td>
+                    <td>Bug</td>
+                    <td>Analyzed</td>
+                    <td>7.4.0beta2</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78429">opcache_compile_file(__FILE__); segfaults</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78427">78427</a><br><a href="bug.php?id=78427&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-18 08:28 UTC</td>
+                    <td align="center">2019-08-18 08:38 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Variables+related'>Variables related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.3.7</td>  <td>Linux</td>
+                    <td><a href="bug.php?id=78427">IPv6 brackets</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78426">78426</a><br><a href="bug.php?id=78426&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-18 03:01 UTC</td>
+                    <td align="center">2019-08-18 13:01 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Date%2Ftime+related'>Date/time related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.3.8</td>  <td>macOS High Sierra 10.13.6 (17G21</td>
+                    <td><a href="bug.php?id=78426">Unable to parse supported time format</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78425">78425</a><br><a href="bug.php?id=78425&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-17 12:16 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Strings+related'>Strings related</a></td>
+                    <td>Doc</td>
+                    <td>Open</td>
+                    <td>Irrelevant</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78425">7.3 heredoc syntax not documented in manual proper</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78424">78424</a><br><a href="bug.php?id=78424&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-17 02:41 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=phpdbg'>phpdbg</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.3.8</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78424">declare(strict_types=1) causes phpdbg fail with 'Nothing to execute'</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78421">78421</a><br><a href="bug.php?id=78421&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-16 10:15 UTC</td>
+                    <td align="center">2019-08-16 10:50 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=InterBase+related'>InterBase related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.1.31</td>  <td>Linux</td>
+                    <td><a href="bug.php?id=78421">Extension crash when no link identifier is given</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78420">78420</a><br><a href="bug.php?id=78420&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-16 09:51 UTC</td>
+                    <td align="center">2019-08-20 14:25 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=PCRE+related'>PCRE related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.4.0beta2</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78420">preg_match failed with Unicode character scripts</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78417">78417</a><br><a href="bug.php?id=78417&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-15 14:16 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Documentation+problem'>Documentation problem</a></td>
+                    <td>Doc</td>
+                    <td>Open</td>
+                    <td>Irrelevant</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78417">Description of strpos</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78414">78414</a><br><a href="bug.php?id=78414&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-14 10:09 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=OpenSSL+related'>OpenSSL related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.1.31</td>  <td>Ubuntu 16.04</td>
+                    <td><a href="bug.php?id=78414">TLS handshake fails when the certificate chain has more than 2 certificates</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78413">78413</a><br><a href="bug.php?id=78413&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-14 00:32 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=FPM+related'>FPM related</a></td>
+                    <td>Req</td>
+                    <td>Open</td>
+                    <td>Irrelevant</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78413">request_terminate_timeout does not take effect after fastcgi_finish_request</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78405">78405</a><br><a href="bug.php?id=78405&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-12 13:22 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=FPM+related'>FPM related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.3.8</td>  <td>archLinux</td>
+                    <td><a href="bug.php?id=78405">Fpm keeps killing idle children claiming they timed out</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78403">78403</a><br><a href="bug.php?id=78403&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-12 07:51 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Documentation+problem'>Documentation problem</a></td>
+                    <td>Doc</td>
+                    <td>Open</td>
+                    <td>Irrelevant</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78403">array_diff() no longer explicitly mentions key preservation</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78402">78402</a><br><a href="bug.php?id=78402&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-11 20:29 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=%2AGeneral+Issues'>*General Issues</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.3.8</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78402">Converting null to string in error message is bad DX</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78400">78400</a><br><a href="bug.php?id=78400&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-11 16:41 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Built-in+web+server'>Built-in web server</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>Irrelevant</td>  <td>Windows 10</td>
+                    <td><a href="bug.php?id=78400">Sym-linked files are not accessible</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Ver">
+                    <td align="center"><a href="bug.php?id=78397">78397</a><br><a href="bug.php?id=78397&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-10 18:01 UTC</td>
+                    <td align="center">2019-08-16 11:10 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Arrays+related'>Arrays related</a></td>
+                    <td>Bug</td>
+                    <td>Verified</td>
+                    <td>7.2.21</td>  <td>Linux</td>
+                    <td><a href="bug.php?id=78397">Memory exhausted on custom recursion detection in phpunit</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78395">78395</a><br><a href="bug.php?id=78395&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-09 19:46 UTC</td>
+                    <td align="center">2019-08-09 19:50 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=%2AGeneral+Issues'>*General Issues</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.2.21</td>  <td>Ubuntu 19.04</td>
+                    <td><a href="bug.php?id=78395">Exception::getTrace references can modify original reference vars from stack</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78393">78393</a><br><a href="bug.php?id=78393&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-09 14:53 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=PHP+Language+Specification'>PHP Language Specification</a></td>
+                    <td>Doc</td>
+                    <td>Open</td>
+                    <td>Irrelevant</td>  <td>n/a</td>
+                    <td><a href="bug.php?id=78393">Incorrectly specified behavior.</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Ver">
+                    <td align="center"><a href="bug.php?id=78390">78390</a><br><a href="bug.php?id=78390&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-09 12:24 UTC</td>
+                    <td align="center">2019-08-11 22:54 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=%2AEncryption+and+hash+functions'>*Encryption and hash functions</a></td>
+                    <td>Doc</td>
+                    <td>Verified</td>
+                    <td>7.4.0</td>  <td>&nbsp;</td>
+                    <td><a href="bug.php?id=78390">PHP 7.4 now supports string password hash algorithms</a></td>
+                    <td><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;assign=salathe">salathe</a></td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78385">78385</a><br><a href="bug.php?id=78385&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-07 21:57 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=%2AURL+Functions'>*URL Functions</a></td>
+                    <td>Req</td>
+                    <td>Open</td>
+                    <td>7.3.8</td>  <td>N/A</td>
+                    <td><a href="bug.php?id=78385">parse_url() does not include 'query' when question mark is the last char</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78384">78384</a><br><a href="bug.php?id=78384&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-07 17:19 UTC</td>
+                    <td align="center">2019-08-08 12:21 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=PDO+SQLite'>PDO SQLite</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.1.31</td>  <td>Linux Ubuntu 14</td>
+                    <td><a href="bug.php?id=78384">Missing .c file. Compilation error</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Opn">
+                    <td align="center"><a href="bug.php?id=78382">78382</a><br><a href="bug.php?id=78382&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-06 16:43 UTC</td>
+                    <td align="center">Not modified</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Apache2+related'>Apache2 related</a></td>
+                    <td>Bug</td>
+                    <td>Open</td>
+                    <td>7.3.8</td>  <td>Ubuntu 18.04 LTS [Buster]</td>
+                    <td><a href="bug.php?id=78382">Segmentation Violation in opcache</a></td>
+                    <td>&nbsp;</td> </tr>
+                <tr valign="top" class="Asn">
+                    <td align="center"><a href="bug.php?id=78380">78380</a><br><a href="bug.php?id=78380&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-06 09:46 UTC</td>
+                    <td align="center">2019-08-21 00:49 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=mbstring+related'>mbstring related</a></td>
+                    <td>Sec Bug</td>
+                    <td>Assigned</td>
+                    <td>7.1.31</td>  <td>*</td>
+                    <td><a href="bug.php?id=78380">Oniguruma 6.9.3 fixes CVEs</a></td>
+                    <td><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;assign=stas">stas</a></td> </tr>
+                <tr valign="top" class="ReO">
+                    <td align="center"><a href="bug.php?id=78379">78379</a><br><a href="bug.php?id=78379&amp;edit=1">(edit)</a></td>
+                    <td align="center">2019-08-06 05:34 UTC</td>
+                    <td align="center">2019-08-13 08:01 UTC</td>
+                    <td><a href='search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;package_name[]=Reproducible+crash'>Reproducible crash</a></td>
+                    <td>Bug</td>
+                    <td>Re-Opened</td>
+                    <td>7.2Git-2019-08-06 (Git)</td>  <td>Linux</td>
+                    <td><a href="bug.php?id=78379">Cast to object confuses GC, causes crash</a></td>
+                    <td><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;assign=dmitry">dmitry</a></td> </tr>
+                <!-- BEGIN PREV/NEXT -->
+                <tr>
+                    <td class="search-prev_next" colspan="11">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td class="search-prev">&nbsp;</td>
+                                <td class="search-showing">Showing 1-30 of 4889</td>
+                                <td class="search-next"><a href="search.php?cmd=display&amp;order_by=id&amp;direction=DESC&amp;limit=30&amp;status=Open&amp;begin=30">Show Next 30 Entries &raquo;</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- END PREV/NEXT -->
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+
+<table class="foot" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="foot-bar" colspan="2">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td class="foot-copy">
+            <small>
+                <a href="https://php.net/"><img src="images/logo-small.gif" align="left" valign="middle" hspace="3" alt="PHP"></a>
+                <a href="https://php.net/copyright.php">Copyright &copy; 2001-2019 The PHP Group</a><br>
+                All rights reserved.
+            </small>
+        </td>
+        <td class="foot-source">
+            <small>Last updated: Fri Aug 23 14:01:27 2019 UTC</small>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
