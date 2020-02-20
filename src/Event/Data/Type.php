@@ -44,7 +44,7 @@ final class Type
     
     public function equals(Type $type): bool
     {
-        return $type->toString() === $this->type->toString();
+        return $type->toString() === $this->type;
     }
 
     public function toString(): string
