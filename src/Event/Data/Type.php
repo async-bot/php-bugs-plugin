@@ -41,6 +41,11 @@ final class Type
 
         throw new UnsupportedBugsNetType($type);
     }
+    
+    public function equals(Type $type): bool
+    {
+        return $type->toString() === $this->type->toString();
+    }
 
     public function toString(): string
     {
